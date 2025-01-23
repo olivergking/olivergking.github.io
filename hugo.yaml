@@ -1,0 +1,67 @@
+baseURL: https://olivergking.github.io/
+languageCode: en-gb
+title: Oliver King
+theme: PaperMod
+enableRobotsTXT: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+
+  author: Oliver King
+  title: Oliver King
+  description: "Personal webpage"
+
+  homeInfoParams:
+    Title: "Hello :)"
+    Content: Welcome to my webpage. I'm **Oliver**. 
+
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  ShowCodeCopyButtons: true
+  hidemeta: true
+
+  assets:
+    disableHLJS: true
+    favicon: "assets/favicon.ico"
+    favicon16x16: "assets/favicon.ico" 
+    favicon32x32: "assets/favicon.ico" 
+  
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/in/olivergking/"
+    - name: github
+      url: "https://github.com/olivergking/"
+    - name: email
+      url: "mailto:oliver01king@gmail.com"
+    - name: psn
+      url: "https://psnprofiles.com/OL_THE_TROLL"
+    # - name: imdb
+    #   url: "https://www.imdb.com/user/ur68092770/"
+    # - name: bluesky
+    #   url: "https://bsky.app/profile/olivergking.bsky.social"
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: about
+      name: About me
+      url: /about/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+
+markup:
+  highlight:
+    tabWidth: 4
+    lineNos: true
+    noClasses: false
+    style: dracula
