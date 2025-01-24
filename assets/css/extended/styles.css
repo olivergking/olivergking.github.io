@@ -9,7 +9,10 @@
 #linkedin:hover {color: #5865F2}
 #github:hover {color: #2dba4e}
 #email:hover {color: #c71610}
-#psn:hover {color: #b61db9}
+#psn:hover .psn-r {fill: #de0029}
+#psn:hover .psn-y {fill: #f3c202}
+#psn:hover .psn-b {fill: #326db3}
+#psn:hover .psn-g {fill: #00aa9e}
 
 .social-icons {
   padding: 12px 0;
