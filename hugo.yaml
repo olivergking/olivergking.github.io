@@ -16,10 +16,10 @@ params:
   description: "Personal webpage"
 
   homeInfoParams:
-    Title: "Hello :)"
-    Content: Welcome to my webpage. I'm **Oliver**. 
+    Title: "Hello!"
+    Content: Welcome to my webpage. I'm **Oliver**. I enjoy generating insights about environmental challenges using code and remote sensing. I hold degrees in Geography and Earth Observation, and frequently use Python for geospatial data science. 
 
-  defaultTheme: auto # dark, light
+  defaultTheme: light # dark, light, auto
   disableThemeToggle: false
   ShowCodeCopyButtons: true
   hidemeta: true
