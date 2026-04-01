@@ -1,0 +1,98 @@
+#icon, #linkedin, #github, #email, #psn {
+  transition: transform 420ms ease;
+}
+
+#icon:hover, #linkedin:hover, #github:hover, #email:hover, #psn:hover {
+  transform: scale(1.15);
+}
+
+#linkedin:hover {color: #5865F2}
+#github:hover {color: #2dba4e}
+#email:hover {color: #c71610}
+#psn:hover .psn-r {fill: #de0029}
+#psn:hover .psn-y {fill: #f3c202}
+#psn:hover .psn-b {fill: #326db3}
+#psn:hover .psn-g {fill: #00aa9e}
+
+.social-icons {
+  padding: 12px 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  padding: 12px 0
+}
+
+.social-icons a:not(:last-of-type) {
+  margin-inline-end:14px
+}
+
+.footer a {
+  border-bottom: none;
+}
+
+/* Underline Animation */
+.post-content a,
+.post-description a {
+position: relative;
+text-decoration: none;
+box-shadow: none;
+}
+
+.post-content a::before,
+.post-description a::before {
+content: "";
+position: absolute;
+display: block;
+width: 100%;
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: var(--content);
+transform: scaleX(0);
+transition: transform 0.3s ease;
+}
+
+a:hover::before {
+transform: scaleX(1);
+}
+
+.post-content img[src*="#avatar"] {
+  float: right;
+  display: block;
+  border-radius: 50%;
+  max-width: 25%;
+}
+
+::selection {
+    color: #444452;
+    background: #ffdc00;
+}
+
+.email-expand {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.email-expand summary {
+  list-style: none;
+}
+
+.email-expand summary::-webkit-details-marker {
+  display: none;
+}
+
+.email-expand .email-text {
+  margin-left: 10px;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.email-expand[open] .email-text {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,0 +1,46 @@
+baseURL: https://olivergking.github.io/
+languageCode: en-gb
+title: Oliver King
+theme: PaperMod
+enableRobotsTXT: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+
+  author: Oliver King
+  title: Oliver King
+  description: ""
+
+  homeInfoParams:
+    Title: "Hello! :)"
+    # Content: :) 
+
+  defaultTheme: light # dark, light, auto
+  disableThemeToggle: false
+  ShowCodeCopyButtons: true
+  hidemeta: true
+
+  assets:
+    disableHLJS: true
+    favicon: "favicon.ico"
+    favicon16x16: "favicon.ico" 
+    favicon32x32: "favicon.ico" 
+  
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/in/olivergking/"
+    - name: github
+      url: "https://github.com/olivergking/"
+    - name: psn
+      url: "https://psnprofiles.com/OL_THE_TROLL"
+
+markup:
+  highlight:
+    tabWidth: 4
+    lineNos: true
+    noClasses: false
+    style: dracula
